@@ -1,0 +1,38 @@
+# (A) Build the JSON for your “working” corridor point
+python derive_params_from_SFV.py ^
+  --v-phys 4.2e-5 --vphi-phys 9e-5 --lamphi 0.1 ^
+  --lambda-t 1.3e-4 ^
+  --m-Phi 3.4 ^
+  -o params_corridor1424.json
+  
+python goldenRunDetails_v4f_more3_derived_v2.py --params params_corridor1424.json
+
+
+
+
+python derive_params_from_SFV.py ^
+  --v-phys 4.2e-5 --vphi-phys 9e-5 --lamphi 0.1 ^
+  --lambda-t 1.1e-4 ^
+  --m-Phi 3.38 ^
+  -o params_corridor1424.json  =1415
+  
+  
+  python derive_params_from_SFV.py ^
+  --v-phys 4.2e-5 --vphi-phys 9.4e-5 --lamphi 0.1 ^
+  --lambda-t 7e-6 ^
+  --m-Phi 3.5 ^
+  -o params_corridor1424.json   =1234
+  
+  
+   python derive_params_from_SFV.py --v-phys 4.2e-5 -o params_corridor1424.json --m-Phi 3.65 --vphi-phys 9.9e-5 --lambda-t 1e-8 
+   SE=1078
+   
+   
+python derive_params_from_SFV.py --v-phys 4.2e-5 -o params_corridor_next.json --m-Phi 3.62 --vphi-phys 1.19e-4 --lambda-t 9e-9
+SE=630
+
+python derive_params_from_SFV.py --v-phys 4.2e-5 --vphi-phys 9.7e-5 --lambda-t 2e-8 --m-Phi 3.68 -o params_~1k.json
+
+   
+   # Best-guess next point (projecting the local ridge)
+python derive_params_from_SFV.py --v-phys 4.2e-5 -o params_corridor_next.json --vphi-phys 1.5e-4 --lamphi 0.1 --lambda-t 6e-9 --m-Phi 3.69

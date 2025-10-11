@@ -1,0 +1,20 @@
+
+
+# (A) Build the JSON for your “working” corridor point
+python derive_params_from_SFV.py ^
+  --v-phys 4.2e-5 --vphi-phys 8.9e-5 --lamphi 0.1 ^
+  --phiFV 1.79984323175 ^
+  --lambda-t 2.0824e-4 ^
+  --m-Phi 3.5089 ^
+  -o params_corridor.json
+  
+  python goldenRunDetails_v4f_more3_derived_v2.py --params params_corridor.json
+  
+  
+  #phiFV derived
+  python derive_params_from_SFV_attempt2.py --profile background_profile_g0.csv ^
+  --v-phys 4.2e-5 --vphi-phys 8.9e-5 --lamphi 0.1 ^
+  -o params_from_g0.json
+
+
+

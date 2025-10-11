@@ -1,0 +1,15 @@
+{
+  "notes": "Derived (no tuning) from SFV properties + O(4) tail mass or \u03bb_t.",
+  "Phi_FV": 0.0,
+  "phi_FV": -1.7320508075688772,
+  "v_phys": 4.2e-05,
+  "v_phi_phys": 0.00015,
+  "v_phi_t": 3.571428571428571,
+  "lam_phi": 0.1,
+  "lambda_t": 1e-10,
+  "mu2_t": 9.999999999999998e-11,
+  "bias_t": -1.764e-11,
+  "g_portal_t": 2.6830017006861526,
+  "m_phi_used": 2.4494897427831778e-05,
+  "m_Phi_used": 3.85
+}
